@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tittle -->
+    <title>Vsilva</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/extends.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+          <a href="/">
+            <img src="assets/favicon-32x32.png" alt="Lucas Silva" />
+          </a>
+          <ul class="navbar__links">
+            <li><a href="#header">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
+        </div>
+
+    </nav>
+<!--header-->
+<header id="header" class="max-width">
+    <div class="header__left">
+      <h1>Olá! Sou Vinicius Silva Desenvolvedor</h1>
+      <p>
+        Eu sou Vinicius Silva, um jovem estudante de Ciência da Computação e apaixonado por tecnologia.
+      </p>
+      <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+    </div>
+    <div class="header__right">
+      <div class="header__image">
+        <img src="assets/vini.jpg" alt="Vinicius Silva" class="Vinicius" />
+      </div>
+    </div>
+  </header>
+
+
+    <!-- Sobre -->
+    <section id="about" class="about max-width">
+        <div class="about__left">
+          <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+          <p>
+            Que tal se conectar comigo nas redes sociais?
+          </p>
+          <ul>
+            <li>
+                <a href="https://github.com/vinicius171"><img src="assets/github.png" alt="GitHub" /></a>
+              </li>
+            <li>
+              <a href="https://www.instagram.com/eovini010/?hl=pt-br"><img src="assets/instagram.png" alt="Instagram" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/vinicius-silva-078633220/"><img src="assets/linkedin.png" alt="Linkedin" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="about__right">
+          <h3 class="tertiary-title mb-m">
+            Estudante de Ciência da Computação e apaixonado em assuntos sobre visão computacional
+          </h3>
+          <p>
+            Sou um estudante de Ciência da Computação movido pela curiosidade e paixão por transformar ideias em soluções tecnológicas. Minha principal área de interesse e estudo é a visão computacional, onde investigo como a inteligência artificial pode auxiliar computadores a interpretar o mundo visual para otimizar processos e facilitar a vida humana. Além disso, dedico-me a compreender os impactos sociais da IA, os pilares da teoria da computação e as melhores práticas de engenharia de software. Embora esteja no início da minha jornada em desenvolvimento web, estou sempre aberto a novos desafios e oportunidades para inovar e crescer profissionalmente.  
+          </p>
+        </div>
+      </section>
+
+    <!-- habilidades -->
+    <section id="skills" class="skills">
+        <div class="skills__content max-width">
+          <h2 class="tertiary-title">Minha caixinha de ferramentas</h2>
+          <p class="description">
+            Descubra as habilidades e ferramentas que domino e que me permitem
+            criar soluções criativas e funcionais.
+          </p>
+          <ul>
+            <li class="skills__item">
+                <div class="image-container">
+                  <img src="assets/technical-support.png" alt="Montagem e Manutenção" />
+                </div>
+                <h3>Engenharia de Software</h3>
+                <p>
+                  Familiaridade com o ciclo de vida de desenvolvimento de software, desde a análise de requisitos até a implementação e testes.  
+                </p>
+              </li>
+            <li class="skills__item">
+              <div class="image-container">
+                <img src="assets/computer.png" alt="Visão Computacional" />
+              </div>
+              <h3>Visão Computacional</h3>
+              <p>
+                Experiência com a biblioteca openCV(python) com foco em reconhecimento de objetos 
+              </p>
+            </li>
+            <li class="skills__item">
+              <div class="image-container">
+                <img src="assets/colors.png" alt="Web Design" />
+              </div>
+              <h3>Web Design</h3>
+              <p>
+                Habilidade em criar layouts modernos, com foco na
+                experiência do usuário.
+              </p>
+            </li>
+            <li class="skills__item">
+              <div class="image-container">
+                <img src="assets/estrutu.png" alt="Cyber security" />
+              </div>
+              <h3>Estrutura de Dados</h3>
+              <p>
+                Compreensão de princípios de estrutura de dados para o desenvolvimento de soluções eficientes, considerando desempenho e uso de memória.  
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+  
+      <!-- Projetos -->
+      <section id="projects" class="projects max-width">
+        <h2 class="secondary-title mb-m">Projetos</h2>
+        <p class="description mb-l">
+          Aqui estão alguns dos meus projetos.
+        </p>
+        <div class="projects__grid">
+          <div class="project__item">
+            <h3>Pixel Arte</h3>
+            <p>
+              Um programa que utiliza a biblioteca openCV para transforma imagens em pixel art.
+            </p>
+            <a href="https://github.com/viniciussilva010/pixel_art" target="_blank">
+              <img src="assets/pixel.png" alt="Repositório GitHub" />
+            </a>
+          </div>
+          <br>
+          <div class="project__item">
+            <h3>Agência Bancaria</h3>
+            <p>
+              implementação de uma agência bancária usando java com foco em orientação a objetos, onde o usuário pode criar uma conta, depositar, sacar e transferir dinheiro.
+            </p>
+          <a href="https://github.com/viniciussilva010/agencia_bancaria" target="_blank">Link repositório</a>
+          </div>
+          <br>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer__content max-width mb-0">
+              <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+              <p class="mb-m">
+                Ficarei feliz em saber mais sobre seus projetos e como podemos
+                trabalhar juntos para torná-los realidade.
+              </p>
+              <div class="footer__contact mb-m">
+                <span class="mb-m">viniciussilva02t@gmail.com</span>
+                <span>64 9 9660-9875</span>
+              </div>
+              <ul class="mb-l">
+                <li>
+                  <a href="https://www.instagram.com/eovini010/?hl=pt-br"><img src="assets/instagram.png" alt="Instagram" /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/vinicius-silva-078633220/"><img src="assets/linkedin.png" alt="Linkedin" /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/vinicius171"><img src="assets/github.png" alt="GitHub" /></a>
+                </li>
+              </ul>
+            </div>
+          </footer>      
+
+    <!--script-->
+    <script src="scripts/index.js"></script>
+</body>
+</html>
