@@ -1,27 +1,88 @@
 footer {
-    background-color: var(--light-tertiary-color);
-  }
-  
+  background-color: var(--bg-alt);
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+
+footer .footer__content {
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .footer__content h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+}
+
+footer .footer__content p {
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+footer .footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+footer .footer__contact span {
+  display: block;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: var(--primary-color);
+}
+
+footer .footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+footer .footer__socials li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 1.2rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-fast);
+}
+
+footer .footer__socials li a:hover {
+  background-color: var(--dark-secondary-color);
+  border-color: var(--tertiary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+footer .footer__socials li img {
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+footer .footer__copyright {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  padding-top: 2.4rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
   footer .footer__content {
-    text-align: center;
-    padding: 6rem 2rem 1rem;
-    max-width: 47rem;
+    padding: 4rem 2rem 2rem;
   }
-  
-  footer .footer__content .footer__contact span {
-    display: block;
-    font-weight: 500;
-  }
-  
-  footer .footer__content ul li {
-    display: inline-block;
-  }
-  
-  footer .footer__content ul a {
-    display: inline-block;
-    padding: 1rem;
-  }
-  
-  footer .footer__content .footer__copyright {
-    font-size: 1.4rem;
-  }
+}

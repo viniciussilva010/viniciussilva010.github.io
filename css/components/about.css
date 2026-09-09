@@ -1,49 +1,88 @@
 .about {
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-    scroll-margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+  scroll-margin-top: 12rem;
+  background-color: var(--bg-color);
+  padding: 6rem 0 8rem;
+}
+
+.about .about__left {
+  max-width: 44rem;
+  flex: 1;
+}
+
+.about .about__left p {
+  margin: 1.6rem 0 2.4rem;
+  font-size: 1.7rem;
+}
+
+.about .about__left ul {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.about .about__left ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.2rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-fast);
+}
+
+.about .about__left ul li a:hover {
+  background-color: var(--dark-secondary-color);
+  border-color: var(--tertiary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.about .about__left ul li img {
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.about .about__right {
+  flex: 1;
+  max-width: 66rem;
+  background-color: var(--bg-surface);
+  padding: 3.6rem;
+  border-radius: 1.8rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.about .about__right .tertiary-title {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 3rem;
+    padding: 4rem 0;
   }
-  
+
   .about .about__left {
-    max-width: 40rem;
-    flex: 1;
+    max-width: 100%;
+    text-align: center;
   }
-  
-  .about .about__left p {
-    margin: 1rem 0 2rem;
-  }
-  
+
   .about .about__left ul {
-    margin-left: -1.2rem;
+    justify-content: center;
   }
-  
-  .about .about__left ul li {
-    display: inline-block;
-  }
-  
-  .about .about__left ul li a {
-    display: inline-block;
-    padding: 1rem;
-  }
-  
+
   .about .about__right {
-    flex: 1;
-    max-width: 66rem;
+    text-align: left;
+    padding: 2.4rem;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .about {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .about .about__left {
-      max-width: 66rem;
-      text-align: center;
-    }
-  
-    .about .about__right {
-      text-align: center;
-    }
-  }
+}
