@@ -104,6 +104,8 @@ header .header__right .header__image .Vinicius {
   }
 
   header .header__right .header__image .Vinicius {
+    min-width: unset;
     max-width: 26rem;
+    width: 100%;
   }
 }
